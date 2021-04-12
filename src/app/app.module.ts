@@ -13,6 +13,7 @@ import { NewsPageComponent } from './components/news-page/news-page.component';
 import { ContactsPageComponent } from './components/contacts-page/contacts-page.component';
 import { CarouselComponent } from './components/home-page/carousel/carousel.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ModernDesignComponent } from './components/home-page/modern-design/modern-design.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ProjectPageComponent,
     NewsPageComponent,
     ContactsPageComponent,
-    CarouselComponent
+    CarouselComponent,
+    ModernDesignComponent
   ],
   imports: [
     BrowserModule,

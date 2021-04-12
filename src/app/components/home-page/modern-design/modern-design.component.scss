@@ -1,0 +1,114 @@
+@import "../../../../assets/styles/variables";
+
+.modern-design {
+  display: grid;
+  grid-template-columns: 100%;
+  margin: 80px 80px 125px 80px;
+
+  .title {
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 52px;
+    letter-spacing: 0.185em;
+    text-align: center;
+    text-transform: uppercase;
+    color: $black;
+
+    @media screen and (max-width:1367px) {
+      font-family: 30px;
+    }
+  }
+
+  .sub-title {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 39px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    max-width: 50%;
+    display: grid;
+    justify-self: center;
+    margin-top: 35px;
+    color: $light-black;
+
+    @media screen and (max-width:1367px) {
+      max-width: 75%;
+    }
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 55px;
+    margin-top: 150px;
+    min-height: max-content;
+    padding: 10px;
+
+    @media screen and (max-width:1367px) {
+      grid-gap: 10px;
+      margin-top: 100px;
+    }
+
+    .block {
+      border: 1px solid $grey-border;
+      position: relative;
+      padding: 0 3px;
+
+      .icon {
+        height: 115px;
+        width: 115px;
+        background-color: $strongBlack;
+        border-radius: 100%;
+        box-shadow: 0px 4px 1px 2px rgba(0, 0, 0, 0.1);
+        top: -60px;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media screen and (max-width:1367px) {
+          height: 100px;
+          width: 100px;
+        }
+      }
+
+      .title {
+        font-size: 26px;
+        font-weight: 300;
+        line-height: 34px;
+        letter-spacing: 0.06em;
+        text-align: center;
+        margin-top: 70px;
+        margin-bottom: 20px;
+        color: $strongBlack;
+
+        @media screen and (max-width:1367px) {
+          font-size: 20px;
+          line-height: 26px;
+        }
+      }
+
+      .text {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 23px;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: $strongBlack;
+        margin-bottom: 20px;
+
+        @media screen and (max-width:1367px) {
+          font-size: 12px;
+          line-height: 15.6px;
+        }
+
+      }
+    }
+  }
+
+  @media screen and (max-width:1367px) {
+    margin: 80px 10px 75px 10px;
+  }
+}

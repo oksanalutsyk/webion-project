@@ -10,12 +10,14 @@ import { ServicesPageComponent } from './components/services-page/services-page.
 
 
 const routes: Routes = [
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomePageComponent },
   { path: 'about', component: AboutPageComponent },
   { path: 'services', component: ServicesPageComponent },
   { path: 'project', component: ProjectPageComponent },
   { path: 'news', component: NewsPageComponent },
   { path: 'contacts', component: ContactsPageComponent },
+  { path: '**', redirectTo: '/home' }
 ];
 
 @NgModule({

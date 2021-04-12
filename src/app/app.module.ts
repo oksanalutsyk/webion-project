@@ -11,6 +11,8 @@ import { ServicesPageComponent } from './components/services-page/services-page.
 import { ProjectPageComponent } from './components/project-page/project-page.component';
 import { NewsPageComponent } from './components/news-page/news-page.component';
 import { ContactsPageComponent } from './components/contacts-page/contacts-page.component';
+import { CarouselComponent } from './components/home-page/carousel/carousel.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -22,11 +24,13 @@ import { ContactsPageComponent } from './components/contacts-page/contacts-page.
     ServicesPageComponent,
     ProjectPageComponent,
     NewsPageComponent,
-    ContactsPageComponent
+    ContactsPageComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,12 @@
+<ngb-carousel *ngIf="carousel" [showNavigationIndicators]="false" [wrap]="true">
+  <ng-template ngbSlide *ngFor="let item of carousel">
+    <div class="picsum-img-wrapper">
+      <img [src]="item.src" [alt]="item.title" />
+    </div>
+    <div class="carousel-caption">
+      <h3>{{ item.title }}</h3>
+      <p>{{ item.subTitle }}</p>
+      <button class="more"><span>read more</span></button>
+    </div>
+  </ng-template>
+</ngb-carousel>

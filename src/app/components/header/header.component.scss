@@ -8,13 +8,13 @@ header {
   height: 102px;
   padding: 7px 40px;
   width: max-content;
-  min-width: 100vw;
+  min-width: 100%;
 
   @media screen and (max-width:1367px) {
     height: 60px;
     padding: 10px 35px;
-
   }
+ 
 
   .logo {
     height: 100%;
@@ -38,6 +38,11 @@ header {
 
       span {
         font-size: 30px;
+      }
+    }
+    @media screen and (max-width:1024px) {
+      span {
+        font-size: 22px;
       }
     }
   }
@@ -69,6 +74,11 @@ header {
         font-size: 15px;
         line-height: 15px;
         padding: 3px 0;
+      }
+      @media screen and (max-width:1024px) {
+        margin-right: 20px;
+        font-size: 13px;
+
       }
 
     }

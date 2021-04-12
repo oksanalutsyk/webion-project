@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "webion-progect"
+    }
+  },
+  "defaultProject": "webion-progect",
+  "cli": {
+    "analytics": "03444a1d-f0aa-45cb-89e2-5b0a50a3fad4"
+  }
 }

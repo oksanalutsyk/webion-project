@@ -15,6 +15,7 @@ import { CarouselComponent } from './components/home-page/carousel/carousel.comp
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ModernDesignComponent } from './components/home-page/modern-design/modern-design.component';
 import { SloganComponent } from './components/home-page/slogan/slogan.component';
+import { AgancyAchievementComponent } from './components/home-page/agancy-achievement/agancy-achievement.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { SloganComponent } from './components/home-page/slogan/slogan.component'
     ContactsPageComponent,
     CarouselComponent,
     ModernDesignComponent,
-    SloganComponent
+    SloganComponent,
+    AgancyAchievementComponent
   ],
   imports: [
     BrowserModule,

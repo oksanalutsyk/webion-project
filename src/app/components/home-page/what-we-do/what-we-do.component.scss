@@ -1,0 +1,141 @@
+@import "../../../../assets/styles/variables";
+
+.what-we-do {
+  display: grid;
+  grid-template-columns: 100%;
+  padding: 35px 60px 60px 60px;
+  background-color: $light-grey-background;
+
+  .title {
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 46px;
+    letter-spacing: 0.185em;
+    text-align: center;
+  }
+
+  .sub-title {
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 33px;
+    letter-spacing: 0.13em;
+    text-align: center;
+    margin: 20px 0;
+
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+
+    .block {
+      display: grid;
+      grid-template-columns: 1fr;
+      text-align: center;
+      padding: 45px 30px 25px 30px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 335px;
+
+      @media screen and (max-width:1367px) {
+        min-height: 225px;
+      }
+
+
+      &:first-child {
+        background-image: url(../../../../assets/images/what-we-do/web-dev.png);
+      }
+
+      &:nth-child(2) {
+        background-image: url(../../../../assets/images/what-we-do/app-dev.png);
+      }
+
+      &:last-child {
+        background-image: url(../../../../assets/images/what-we-do/photo.png);
+      }
+
+      .block-title {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0.07em;
+        text-align: center;
+        color: $light-white;
+        align-self: flex-end;
+
+        @media screen and (max-width:1367px) {
+          font-size: 23px;
+        }
+
+        @media screen and (max-width:1024px) {
+          font-size: 20px;
+        }
+      }
+
+      .block-text {
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: $light-white;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        align-self: center;
+
+        @media screen and (max-width:1367px) {
+          font-size: 20px;
+
+        }
+
+        @media screen and (max-width:1024px) {
+          font-size: 16px;
+        }
+      }
+
+      button {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 26px;
+        letter-spacing: 0.05em;
+        text-align: center;
+        color: $light-white;
+        background-color: transparent;
+        border: 3px solid $light-white;
+        text-transform: uppercase;
+        padding: 10px;
+        height: 50px;
+        width: 226px;
+        align-self: end;
+        justify-self: center;
+        align-self: flex-start;
+        transition-duration: 500ms;
+
+        &:hover {
+          background-color: $light-white;
+          color: $black;
+          transition-duration: 500ms;
+
+        }
+
+        @media screen and (max-width:1367px) {
+          align-self: flex-end;
+        }
+
+        @media screen and (max-width:1024px) {
+          font-size: 16px;
+          height: 40px;
+          width: 100%;
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width:1367px) {
+    padding: 15px 15px 60px 15px;
+
+  }
+
+}

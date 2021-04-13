@@ -14,6 +14,7 @@ import { ContactsPageComponent } from './components/contacts-page/contacts-page.
 import { CarouselComponent } from './components/home-page/carousel/carousel.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ModernDesignComponent } from './components/home-page/modern-design/modern-design.component';
+import { SloganComponent } from './components/home-page/slogan/slogan.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ModernDesignComponent } from './components/home-page/modern-design/mode
     NewsPageComponent,
     ContactsPageComponent,
     CarouselComponent,
-    ModernDesignComponent
+    ModernDesignComponent,
+    SloganComponent
   ],
   imports: [
     BrowserModule,

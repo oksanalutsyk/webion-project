@@ -1,0 +1,96 @@
+@import "../../../../assets/styles/variables";
+
+.slogan {
+  background-color: $light-grey-background;
+  padding: 60px;
+
+  .title {
+    font-family: $font-regular-yrsa;
+    font-size: 55px;
+    font-weight: 300;
+    line-height: 86px;
+    letter-spacing: 0.28em;
+    text-align: left;
+
+    @media screen and (max-width:1367px) {
+      font-size: 28px;
+      line-height: 44px;
+      letter-spacing: 0.195em;
+
+    }
+  }
+
+  .author {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 39px;
+    letter-spacing: 0.03em;
+    text-align: left;
+
+    @media screen and (max-width:1367px) {
+      font-size: 20px;
+      line-height: 31px;
+      letter-spacing: 0.03em;
+    }
+
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 55px;
+    margin-top: 50px;
+    min-height: max-content;
+    padding: 10px;
+
+    .block {
+      .title {
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 45px;
+        letter-spacing: 0.25em;
+        text-align: left;
+
+        @media screen and (max-width:1367px) {
+          font-size: 15px;
+        }
+      }
+
+      .text {
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 32px;
+        letter-spacing: 0.01em;
+        text-align: left;
+
+        @media screen and (max-width:1367px) {
+          font-size: 12px;
+          line-height: 16px;
+        }
+
+      }
+
+      &.progr-bar {
+        .label {
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 25px;
+          letter-spacing: 0.15em;
+          text-align: left;
+
+          @media screen and (max-width:1367px) {
+            font-size: 12px;
+            line-height: 18px;
+          }
+
+        }
+
+        p {
+          position: relative;
+
+        }
+      }
+    }
+  }
+}

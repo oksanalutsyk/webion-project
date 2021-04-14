@@ -17,6 +17,7 @@ import { ModernDesignComponent } from './components/home-page/modern-design/mode
 import { SloganComponent } from './components/home-page/slogan/slogan.component';
 import { AgancyAchievementComponent } from './components/home-page/agancy-achievement/agancy-achievement.component';
 import { WhatWeDoComponent } from './components/home-page/what-we-do/what-we-do.component';
+import { OurTeamComponent } from './components/home-page/our-team/our-team.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { WhatWeDoComponent } from './components/home-page/what-we-do/what-we-do.
     ModernDesignComponent,
     SloganComponent,
     AgancyAchievementComponent,
-    WhatWeDoComponent
+    WhatWeDoComponent,
+    OurTeamComponent
   ],
   imports: [
     BrowserModule,

@@ -10,6 +10,7 @@
 
 body {
   font-family: $font-regular;
+  // background-color: $body-background;
 }
 
 button {
@@ -24,6 +25,11 @@ a {
 
   &:hover {
     text-decoration: none !important
+  }
+}
+img {
+  &:hover {
+    cursor: pointer;
   }
 }
 

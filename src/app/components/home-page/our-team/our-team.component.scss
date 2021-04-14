@@ -1,0 +1,146 @@
+@import "../../../../assets/styles/variables";
+
+.our-team {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 35px 60px 60px 60px;
+  grid-gap: 50px;
+
+  .left-side {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content;
+
+    .title {
+      font-size: 55px;
+      font-weight: 400;
+      line-height: 72px;
+      letter-spacing: 0.1em;
+      margin-top: 200px;
+      margin-bottom: 60px;
+
+    }
+
+    .text {
+      font-size: 30px;
+      font-weight: 300;
+      line-height: 39px;
+      letter-spacing: 0.1em;
+
+    }
+
+
+  }
+
+  .content {
+    display: grid;
+    // grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 400px);
+    grid-gap: 50px;
+
+    .persone {
+      // max-width: 300px;
+      // height: 450px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      overflow: hidden;
+
+      img {
+        position: absolute;
+        -moz-transition: all 1s ease-out;
+        -o-transition: all 1s ease-out;
+        -webkit-transition: all 1s ease-out;
+
+        &:hover {
+          -webkit-transform: scale(1.1);
+          -moz-transform: scale(1.1);
+          -o-transform: scale(1.1);
+        }
+
+        min-height: 100%;
+        max-height: 100%;
+        min-width: 100%;
+        max-width: 100%;
+      }
+
+      .name {
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 39px;
+        letter-spacing: 0.05em;
+        text-align: left;
+        color: $light-white;
+        opacity: 1;
+        transition-duration: 700ms;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+
+      }
+
+      .info {
+        position: absolute;
+        bottom: 20px;
+        left: 10px;
+        flex-direction: column;
+        opacity: 0;
+        transition-duration: 500ms;
+
+        .name-animated {
+          font-size: 30px;
+          font-weight: 500;
+          line-height: 39px;
+          letter-spacing: 0.05em;
+          text-align: left;
+          color: $light-white;
+          display: flex;
+          margin-bottom: 15px;
+        }
+
+        .description {
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 18px;
+          letter-spacing: 0.015em;
+          text-align: left;
+          color: $light-white;
+
+        }
+      }
+
+      &:hover {
+        .name {
+          opacity: 0;
+          transition-duration: 500ms;
+        }
+
+        .info {
+          opacity: 1;
+          transition-duration: 500ms;
+          // position: static;
+        }
+
+      }
+
+    }
+
+    @media screen and (max-width:1490px) {
+      grid-template-rows: repeat(2, 500px);
+    }
+    @media screen and (max-width:1200px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 600px);
+    }
+    @media screen and (max-width:950px) {
+      grid-template-rows: repeat(2, 500px);
+    }
+  }
+
+  @media screen and (max-width:1490px) {
+    grid-template-columns: 1fr;
+
+  }
+
+}

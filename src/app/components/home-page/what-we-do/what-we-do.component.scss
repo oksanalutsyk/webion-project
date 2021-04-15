@@ -44,15 +44,15 @@
 
 
       &:first-child {
-        background-image: url(../../../../assets/images/what-we-do/web-dev.png);
+        background-image: url(src/assets/images/what-we-do/web-dev.png);
       }
 
       &:nth-child(2) {
-        background-image: url(../../../../assets/images/what-we-do/app-dev.png);
+        background-image: url(src/assets/images/what-we-do/app-dev.png);
       }
 
       &:last-child {
-        background-image: url(../../../../assets/images/what-we-do/photo.png);
+        background-image: url(src/assets/images/what-we-do/photo.png);
       }
 
       .block-title {

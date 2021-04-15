@@ -19,6 +19,7 @@ import { AgancyAchievementComponent } from './components/home-page/agancy-achiev
 import { WhatWeDoComponent } from './components/home-page/what-we-do/what-we-do.component';
 import { OurTeamComponent } from './components/home-page/our-team/our-team.component';
 import { GetWebionComponent } from './components/home-page/get-webion/get-webion.component';
+import { OurProjectsComponent } from './components/home-page/our-projects/our-projects.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { GetWebionComponent } from './components/home-page/get-webion/get-webion
     AgancyAchievementComponent,
     WhatWeDoComponent,
     OurTeamComponent,
-    GetWebionComponent
+    GetWebionComponent,
+    OurProjectsComponent
   ],
   imports: [
     BrowserModule,

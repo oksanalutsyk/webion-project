@@ -3,15 +3,19 @@
 .agancy-achievement {
   display: grid;
   grid-template-columns: 100%;
-  margin: 60px 120px 100px 120px;
+  margin: 60px;
 
   .title {
     font-size: 28px;
     font-weight: 300;
-    line-height: 37px;
+
     letter-spacing: 0.185em;
     text-align: center;
     margin-bottom: 50px;
+
+    @media screen and (max-width:650px) {
+      font-size: 24px;
+    }
   }
 
   .content {
@@ -48,6 +52,36 @@
         letter-spacing: 0.09em;
         text-align: center;
 
+      }
+    }
+
+    @media screen and (max-width:1100px) {
+      grid-template-columns: repeat(2, 1fr);
+
+      .block {
+        margin-bottom: 50px;
+      }
+    }
+
+    @media screen and (max-width:650px) {
+      grid-template-columns: repeat(1, 1fr);
+
+      .block {
+        &:not(:last-child) {
+          margin-bottom: 40px;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .count {
+          font-size: 32px;
+        }
+
+        .text {
+          font-size: 18px;
+        }
       }
     }
   }

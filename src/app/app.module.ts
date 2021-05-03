@@ -1,5 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,7 +16,6 @@ import { ProjectPageComponent } from './components/project-page/project-page.com
 import { NewsPageComponent } from './components/news-page/news-page.component';
 import { ContactsPageComponent } from './components/contacts-page/contacts-page.component';
 import { CarouselComponent } from './components/home-page/carousel/carousel.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ModernDesignComponent } from './components/home-page/modern-design/modern-design.component';
 import { SloganComponent } from './components/home-page/slogan/slogan.component';
 import { AgancyAchievementComponent } from './components/home-page/agancy-achievement/agancy-achievement.component';
@@ -20,6 +23,7 @@ import { WhatWeDoComponent } from './components/home-page/what-we-do/what-we-do.
 import { OurTeamComponent } from './components/home-page/our-team/our-team.component';
 import { GetWebionComponent } from './components/home-page/get-webion/get-webion.component';
 import { OurProjectsComponent } from './components/home-page/our-projects/our-projects.component';
+import { LatestFromBlogComponent } from './components/home-page/latest-from-blog/latest-from-blog.component';
 
 @NgModule({
   declarations: [
@@ -39,12 +43,15 @@ import { OurProjectsComponent } from './components/home-page/our-projects/our-pr
     WhatWeDoComponent,
     OurTeamComponent,
     GetWebionComponent,
-    OurProjectsComponent
+    OurProjectsComponent,
+    LatestFromBlogComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    BrowserAnimationsModule,
+    NgbModule,
+    CarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

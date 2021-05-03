@@ -1,0 +1,32 @@
+@import "../../../assets/styles/variables";
+@import "../../../assets/styles/mixin.scss";
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $light-grey-background;
+  padding: 100px 0;
+
+  .logo {
+    @include logo()
+  }
+
+  .social {
+    margin-top: 60px;
+
+    img {
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+
+      &:not(:last-child) {
+        margin-right: 35px;
+      }
+    }
+  }
+  @media screen and (max-width:850px) {
+    padding: 75px 0;
+  }
+}

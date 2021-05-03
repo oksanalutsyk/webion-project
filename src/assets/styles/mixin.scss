@@ -1,0 +1,44 @@
+@mixin logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  span {
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 600;
+
+  }
+
+  &.header-logo {
+    border-top: 1.66px solid $white;
+    border-bottom: 1.66px solid $white;
+
+    span {
+      color: $white;
+    }
+  }
+
+  &.footer-logo {
+    border-top: 1.66px solid $light-black;
+    border-bottom: 1.66px solid $light-black;
+
+    span {
+      color: $light-black;
+    }
+  }
+
+  @media screen and (max-width:1367px) {
+    line-height: 42px;
+
+    span {
+      font-size: 30px;
+    }
+  }
+
+  @media screen and (max-width:1024px) {
+    span {
+      font-size: 22px;
+    }
+  }
+}

@@ -4,6 +4,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import {MatSidenavModule} from '@angular/material/sidenav';
+
+import {MatListModule} from '@angular/material/list';
+import {MatIconModule} from '@angular/material/icon';
+import {MatToolbarModule} from '@angular/material/toolbar';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -24,6 +30,7 @@ import { OurTeamComponent } from './components/home-page/our-team/our-team.compo
 import { GetWebionComponent } from './components/home-page/get-webion/get-webion.component';
 import { OurProjectsComponent } from './components/home-page/our-projects/our-projects.component';
 import { LatestFromBlogComponent } from './components/home-page/latest-from-blog/latest-from-blog.component';
+import { AdminComponent } from './components/admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +51,8 @@ import { LatestFromBlogComponent } from './components/home-page/latest-from-blog
     OurTeamComponent,
     GetWebionComponent,
     OurProjectsComponent,
-    LatestFromBlogComponent
+    LatestFromBlogComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
@@ -52,6 +60,10 @@ import { LatestFromBlogComponent } from './components/home-page/latest-from-blog
     BrowserAnimationsModule,
     NgbModule,
     CarouselModule,
+    MatSidenavModule,
+    MatListModule,
+    MatIconModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
